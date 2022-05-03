@@ -1,0 +1,11 @@
+﻿<Application
+    x:Class="UWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP"
+    xmlns:services="using:UWP.Services">
+    <Application.Resources>
+        <SolidColorBrush Color="#FFDB3724" x:Key="AppRed" />
+        <services:Settings x:Key="Settings" />
+    </Application.Resources>
+</Application>

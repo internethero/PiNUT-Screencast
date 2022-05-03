@@ -1,0 +1,131 @@
+﻿<Page
+    x:Class="UWP.Views.AboutView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP.Views"
+    xmlns:vm="using:UWP.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <vm:AboutViewModel x:Name="vm" />
+    </Page.DataContext>
+
+    <Grid Margin="14,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="440" MaxWidth="600"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Text="About" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal">
+                            <TextBlock x:Uid="About-Version" Text="Version"/>
+                            <TextBlock Margin="2,0,2,0" Text="{x:Bind vm.Version, Mode=OneTime}"/>
+                            <TextBlock Text="Alpha"/>
+                        </StackPanel>
+                    </Grid>
+                    <Image Grid.Column="1" Source="/Assets/Square44x44Logo.scale-200.png" Height="60" Width="60" Margin="0,0,14,0" HorizontalAlignment="Right"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        
+        <ScrollViewer Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Padding="0,0,0,14">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition MinWidth="440" MaxWidth="600"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" Margin="0,0,14,0">
+                    <TextBlock TextWrapping="Wrap" x:Uid="About-Description" Text="PiNUT Screencast is a screencasting software, that discover devices on the network advertising their services, with emphasis on ease of use and low latency.&#x0a;It`s designed to be a alternative to miracast using general purpose hardware like a single-board compuer and be tuneable for the use case." />
+                    
+                    <TextBlock Text=""/>
+                    <TextBlock x:Uid="About-GetStartedHeader" Text="Get started:"/>
+                    <TextBlock x:Uid="About-GetStartedInstruction1" Text="Download a windows build of ffmpeg"/>
+                    <HyperlinkButton Padding="0" Margin="2,0,2,0" Content="https://ffmpeg.org/download.html#build-windows" NavigateUri="https://ffmpeg.org/download.html#build-windows" />
+                    <TextBlock TextWrapping="Wrap" x:Uid="About-GetStartedInstruction2" Text="In settings &quot;FFmpeg Path&quot;, select the folder containing ffmpeg.exe in the path you unpacked ffmpeg."/>
+
+                    <TextBlock Text=""/>
+                    <TextBlock x:Uid="About-HowItWorksHeader" Text="How it works:"/>
+                    <TextBlock x:Uid="About-HowItWorksDescription" TextWrapping="Wrap" Text="The client discover devices on the network, the device advertises supported protocol, framerate etc, the client will use the advertised parameters if it does not exceed the clients settings."/>
+                    
+                    <TextBlock Text=""/>
+                    <TextBlock TextWrapping="Wrap" x:Uid="About-DocsAndSource" Text="For documentation and source code:"/>
+                    <HyperlinkButton Padding="0" Content="https://github.com/internethero/PiNUT-Screencast" NavigateUri="https://github.com/internethero/PiNUTScreencast"/>
+                    
+                    <TextBlock Text=""/>
+                    <TextBlock>
+                        MIT License
+                        <LineBreak/>
+                        <LineBreak/>
+                        Copyright © 2022 Henrik Eliasson
+                        <LineBreak/>
+                        <LineBreak/>
+                        Permission is hereby granted, free of charge, to any person obtaining
+                        <LineBreak/>
+                        a copy of this software and associated documentation files
+                        <LineBreak/>
+                        (the "Software"), to deal in the Software without restriction, including
+                        <LineBreak/>
+                        without limitation the rights to use, copy, modify, merge, publish,
+                        <LineBreak/>
+                        distribute, sublicense, and/or sell copies of the Software, and to
+                        <LineBreak/>
+                        permit persons to whom the Software is furnished to do so, subject
+                        <LineBreak/>
+                        to the following conditions:
+                        <LineBreak/>
+                        <LineBreak/>
+                        The above copyright notice and this permission notice shall be
+                        <LineBreak/>
+                        included in all copies or substantial portions of the Software.
+                        <LineBreak/>
+                        <LineBreak/>
+                        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+                        <LineBreak/>
+                        KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                        <LineBreak/>
+                        WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                        <LineBreak/>
+                        PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+                        <LineBreak/>
+                        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+                        <LineBreak/>
+                        DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+                        <LineBreak/>
+                        CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+                        <LineBreak/>
+                        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+                        <LineBreak/>
+                        DEALINGS IN THE SOFTWARE.
+                    </TextBlock>
+                    <TextBlock Text=""/>
+                    <TextBlock x:Uid="About-CreditsHeader" Text="This software uses the following libraries"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Zeroconf"/>
+                        <HyperlinkButton Grid.Column="1" Padding="0" Content="https://github.com/novotnyllc/Zeroconf" NavigateUri="https://github.com/novotnyllc/Zeroconf" />
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
