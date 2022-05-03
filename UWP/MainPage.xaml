@@ -1,0 +1,72 @@
+﻿<Page
+    x:Class="UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid BorderBrush="{ThemeResource AppBarBorderThemeBrush}">
+        <Grid x:Name="AppTitleBar" Canvas.ZIndex="10" HorizontalAlignment="Stretch"
+                    VerticalAlignment="Top" Height="39" Margin="40,0,0,0" Background="Transparent">
+            <TextBlock Text="PiNUT Screencast" FontSize="18" FontWeight="Bold" Margin="12,8,0,0"/>
+        </Grid>
+
+        <NavigationView
+            x:Name="NavigationView"
+            Margin="0,-1,0,0"
+            Loaded="NavigationView_Loaded"
+            ItemInvoked="NavigationView_ItemInvoked"
+            IsSettingsVisible="False"
+            IsBackButtonVisible="Collapsed"
+            SelectionFollowsFocus="Disabled"
+            PaneDisplayMode="Auto"
+            OpenPaneLength="212"
+            CompactModeThresholdWidth="0"
+            ExpandedModeThresholdWidth="700">
+            <NavigationView.MenuItems>
+                <NavigationViewItem
+                    x:Name="NavigationViewConnect"
+                    x:Uid="MainPage-MenuItemConnect"
+                    Tag="connect"
+                    Content="Connect"
+                    ToolTipService.ToolTip="Connect" 
+                    BorderThickness="0"
+                    FontSize="16"  Height="48"
+                    IsEnabled="False">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEBC6;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem
+                    x:Uid="MainPage-MenuItemSettings"
+                    Tag="settings"
+                    Content="Settings"
+                    ToolTipService.ToolTip="Settings"
+                    BorderThickness="0"
+                    FontSize="16" Height="48">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE713;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+
+                <NavigationViewItem
+                    x:Uid="MainPage-MenuItemAbout"
+                    Tag="about"
+                    Content="About"
+                    ToolTipService.ToolTip="About"
+                    BorderThickness="0"
+                    FontSize="16" Height="48">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE946;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+
+            <Frame x:Name="ContentFrame" Margin="0,39,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        </NavigationView>
+    </Grid>
+</Page>

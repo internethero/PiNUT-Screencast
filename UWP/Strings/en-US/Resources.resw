@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About-CreditsHeader.Text" xml:space="preserve">
+    <value>This software uses the following libraries</value>
+  </data>
+  <data name="About-Description.Text" xml:space="preserve">
+    <value>PiNUT Screencast is a  screen sharing software, that discover devices on the network advertising their services, with emphasis on ease of use and low latency.
+It`s designed to be a alternative to Miracast using general purpose hardware like a single-board computer and be tunable for the use case.</value>
+  </data>
+  <data name="About-DocsAndSource.Text" xml:space="preserve">
+    <value>For documentation on howto configure devices and source code:</value>
+  </data>
+  <data name="About-GetStartedHeader.Text" xml:space="preserve">
+    <value>Get started:</value>
+  </data>
+  <data name="About-GetStartedInstruction1.Text" xml:space="preserve">
+    <value>Download a windows build of ffmpeg</value>
+  </data>
+  <data name="About-GetStartedInstruction2.Text" xml:space="preserve">
+    <value>In settings "FFmpeg Path", select the folder containing ffmpeg.exe in the path you unpacked ffmpeg.</value>
+  </data>
+  <data name="About-HowItWorksDescription.Text" xml:space="preserve">
+    <value>The client discover devices on the network, the device advertises supported protocol, framerate etc, the client will use the advertised parameters if it does not exceed the clients settings.</value>
+  </data>
+  <data name="About-HowItWorksHeader.Text" xml:space="preserve">
+    <value>How it works:</value>
+  </data>
+  <data name="About-Version.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Connect-ButtonEndStream.Text" xml:space="preserve">
+    <value>End Stream</value>
+  </data>
+  <data name="Connect-ButtonStartStream.Text" xml:space="preserve">
+    <value>Go Live</value>
+  </data>
+  <data name="Connect-ProfileText.Text" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Connect-StreamDesktopText.Text" xml:space="preserve">
+    <value>Press "Go Live" to stream desktop</value>
+  </data>
+  <data name="Connect-TextSelectDevice.Text" xml:space="preserve">
+    <value>Select a device to connect to</value>
+  </data>
+  <data name="Connect-TextStatusConnecting.Text" xml:space="preserve">
+    <value>Connecting</value>
+  </data>
+  <data name="Connect-TextStatusError.Text" xml:space="preserve">
+    <value>Could not establish a connection</value>
+  </data>
+  <data name="Connect-TooltipDeviceNotResponding.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Advertised service is not responding</value>
+  </data>
+  <data name="MainMenu-MenuItemConnect.Content" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="MainPage-DialogAppServiceLost" xml:space="preserve">
+    <value>The launcher process seems to have experienced a tragic accident.
+Restart?</value>
+  </data>
+  <data name="MainPage-MenuItemAbout.Content" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MainPage-MenuItemAbout.ToolTipService.ToolTip" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MainPage-MenuItemConnect.Content" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="MainPage-MenuItemConnect.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="MainPage-MenuItemSettings.Content" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MainPage-MenuItemSettings.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>Quit</value>
+  </data>
+  <data name="Restart" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="Settings-AutoMinimizeText.Text" xml:space="preserve">
+    <value>Auto Minimize</value>
+  </data>
+  <data name="Settings-AutoMinimizeTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Automatically minimize when a connection is established.</value>
+  </data>
+  <data name="Settings-DialogWrongPath" xml:space="preserve">
+    <value>ffmpeg.exe not found in the selected folder.</value>
+  </data>
+  <data name="Settings-EncoderComboBoxItemSoftware" xml:space="preserve">
+    <value>Software</value>
+  </data>
+  <data name="Settings-EncoderText.Text" xml:space="preserve">
+    <value>Video encoder</value>
+  </data>
+  <data name="Settings-EncoderTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Software or hardware accelerated encoding.
+Only software for now.</value>
+  </data>
+  <data name="Settings-FramerateText.Text" xml:space="preserve">
+    <value>Framerate</value>
+  </data>
+  <data name="Settings-FramerateTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Max framerate the stream will be encoded in.
+Default: 30</value>
+  </data>
+  <data name="Settings-GeneralHeaderText.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Settings-HeaderCaptureText.Text" xml:space="preserve">
+    <value>Capture</value>
+  </data>
+  <data name="Settings-HeaderGeneralText.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Settings-PathText.Text" xml:space="preserve">
+    <value>FFmpeg path</value>
+  </data>
+  <data name="Settings-PathTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Path to where ffmpeg.exe is located,
+for more information see about.
+This setting is required.</value>
+  </data>
+  <data name="Settings-ProfileSelectionMovie" xml:space="preserve">
+    <value>Movie</value>
+  </data>
+  <data name="Settings-ProfileSelectionScreenshare" xml:space="preserve">
+    <value>Screenshare</value>
+  </data>
+  <data name="Settings-ProfileSelectionSlideshow" xml:space="preserve">
+    <value>Slideshow</value>
+  </data>
+  <data name="Settings-ProfileText.Text" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Settings-ProfileTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Screenshare: Optimize for low delay.
+Movie: Optimize for novie.
+Slideshow: Optimize for slideshow.
+Default: Screenshare</value>
+  </data>
+  <data name="Settings-ThreadsText.Text" xml:space="preserve">
+    <value>Threads</value>
+  </data>
+  <data name="Settings-ThreadsTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>How many threads ffmpeg should use.
+Default 2</value>
+  </data>
+  <data name="Setttings-SoundText.Text" xml:space="preserve">
+    <value>Sound</value>
+  </data>
+  <data name="Setttings-SoundTooltip.ToolTipService.ToolTip" xml:space="preserve">
+    <value>Record system sound into the stream.</value>
+  </data>
+  <data name="Software" xml:space="preserve">
+    <value>Software</value>
+  </data>
+</root>
